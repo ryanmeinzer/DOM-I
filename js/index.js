@@ -95,14 +95,16 @@ for ( let i = 0; i < allNav.length; i++) {
   allNavGreen[i].style.color = "green";
 }
 
-const newContent = document.createElement("nav1");
+const newContent = document.createElement("a");
+newContent.setAttribute("href", "#")
 newContent.textContent = "Prepended";
 const parentElement = document.querySelector('nav');
 // console.log(parentElement);
 parentElement.prepend(newContent);
 newContent.style.color = "green";
 
-const newContent2 = document.createElement("nav2");
+const newContent2 = document.createElement("a");
+newContent2.setAttribute("href", "#")
 newContent2.textContent = "Appended";
 const parentElement2 = document.querySelector('nav');
 parentElement2.appendChild(newContent2);
