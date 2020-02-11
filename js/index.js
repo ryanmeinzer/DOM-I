@@ -89,4 +89,3 @@ allPs[5].textContent = siteContent["contact"]["address"];
 allPs[6].textContent = siteContent["contact"]["phone"];
 allPs[7].textContent = siteContent["contact"]["email"];
 allPs[8].textContent = siteContent["footer"]["copyright"];
-
