@@ -96,13 +96,14 @@ for ( let i = 0; i < allNav.length; i++) {
 }
 
 const newContent = document.createElement("nav1");
-newContent.textContent = "NavAdd1";
+newContent.textContent = "Prepended";
 const parentElement = document.querySelector('nav');
 // console.log(parentElement);
-parentElement.appendChild(newContent);
+parentElement.prepend(newContent);
+newContent.style.color = "green";
 
 const newContent2 = document.createElement("nav2");
-newContent2.textContent = "NavAdd2";
+newContent2.textContent = "Appended";
 const parentElement2 = document.querySelector('nav');
-// console.log(parentElement);
 parentElement2.appendChild(newContent2);
+newContent2.style.color = "green";
