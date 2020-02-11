@@ -94,3 +94,15 @@ const allNavGreen = document.querySelectorAll('a');
 for ( let i = 0; i < allNav.length; i++) {
   allNavGreen[i].style.color = "green";
 }
+
+const newContent = document.createElement("nav1");
+newContent.textContent = "NavAdd1";
+const parentElement = document.querySelector('nav');
+// console.log(parentElement);
+parentElement.appendChild(newContent);
+
+const newContent2 = document.createElement("nav2");
+newContent2.textContent = "NavAdd2";
+const parentElement2 = document.querySelector('nav');
+// console.log(parentElement);
+parentElement2.appendChild(newContent2);
